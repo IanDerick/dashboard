@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dfdfdf;
+}
+  
+.grid {
+	display: grid;
+}
+.grid-3 {
+	display: grid;
+	grid-template-areas:
+	    	
+        "nav"
+		"sidenav"
+		"content"
+		"footer";
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	gap: 20px;
+	padding: 10px;
+}
+
+@media (min-width: 768px) {
+	.grid-3 {
+		grid-template-areas:
+			"nav nav"
+			"sidenav content"
+			"footer footer";
+		grid-template-columns: 200px 1fr;
+		grid-template-rows: auto 1fr auto;
+	}
+}
+
+@media (min-width: 1024px) {
+	.grid-3 {
+		grid-template-areas:
+			"nav nav nav"
+			"sidenav content content"
+			"footer footer footer";
+		grid-template-columns: 150px 1fr 150px;
+	}
+}
+
+.logo {
+	grid-area: logo;
+}
+
+.nav {
+	grid-area: nav;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 4px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.content-sidenav {
+	grid-area: nav;
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+	grid-area: content;
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main {
+    grid-area: main;
+    padding: 20px;
+}
+  
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+  
+.card-1 {
+    background-color: rgba(0, 140, 255, 0.774);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+}
+
+.card-2 {
+    background-color: #6d40e7;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+}
+
+.card-3 {
+    background-color: #39c449;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+}
+
+.sidenav {
+	grid-area: sidenav;
+	display: flex;
+	flex-direction: column;
+    padding: 20px 20px;
+    gap: 32px;
+    background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.texto{
+    margin-left: 20px;
+}
+
+.titulo{
+    margin-left: 20px;
+}
+
+.Contato a{
+    color: inherit;
+    margin-left: 20px;
+}
+.sidenav a{
+    display: block;
+    margin-bottom: 25px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer {
+	grid-area: footer;
+	text-align: center;
+	padding: 20px;
+	background-color: #dfdfdf;
+	color: #555;
+}
