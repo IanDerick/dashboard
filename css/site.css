@@ -110,9 +110,46 @@ body {
     font-size: 1.1rem;
 	transition: transform 0.5s ease; 
 }
-.card-1:hover, .card-2:hover, .card-3:hover{
+
+.card-dados {
+    background-color: #ffbc34;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+	transition: transform 0.5s ease; 
+}
+
+.card-1:hover, .card-2:hover, .card-3:hover, .card-dados:hover{
 	transform: translateY(-3px); 
 }
+
+.grafico-torta {
+	width: 100%;
+	height: 200px;
+	background-color: #ff0000;
+	border-radius: 50%;
+	background: conic-gradient(
+    #1ca700 0% 25%, /* Vermelho */
+    #ffbc34 25% 50%, /* Verde */
+    #008cff 50% 75%, /* Azul */
+    #ff5100 75% 100% /* Amarelo */
+  	);
+	text-align: center;
+	line-height: 200px;
+	font-size: 24px;
+  }
+
+.dados {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+  }
+  
+  .dados p {
+	margin-bottom: 10px;
+  }
 
 .sidenav {
 	grid-area: sidenav;
