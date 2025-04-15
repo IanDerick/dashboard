@@ -88,6 +88,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 1.1rem;
+	transition: transform 0.5s ease; 
 }
 
 .card-2 {
@@ -97,6 +98,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 1.1rem;
+	transition: transform 0.5s ease; 
 }
 
 .card-3 {
@@ -106,6 +108,10 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 1.1rem;
+	transition: transform 0.5s ease; 
+}
+.card-1:hover, .card-2:hover, .card-3:hover{
+	transform: translateY(-3px); 
 }
 
 .sidenav {
